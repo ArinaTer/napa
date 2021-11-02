@@ -1,0 +1,11 @@
+.course-banner {
+  margin: 30px 0 60px; }
+  .course-banner .banner--item {
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    background-image: linear-gradient(81.4deg, #F62C2C 0%, #EE8F8F 100%); }
+  .course-banner .banner__text {
+    font-size: 20px;
+    line-height: 100%;
+    color: #000; }

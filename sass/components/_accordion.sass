@@ -1,0 +1,80 @@
+.accordion
+    border-radius: 10px
+    padding-top: 60px
+    +r(1280)
+        padding-top: 50px
+    +r(768)
+        padding-top: 30px
+
+.accordion__item
+    border-top: 0.5px solid $b
+    padding: 30px 0
+    +r(1280)
+        padding: 20px 0
+    +r(768)
+        padding: 15px 0
+    &:hover
+        cursor: pointer
+    &:last-child
+        border-bottom: 0.5px solid $b
+
+.accordion__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .accordion__text
+        font-size: 30px
+        line-height: 100%
+        color: $b
+        position: relative
+        cursor: pointer
+        display: inline-block
+        +r(1280)
+            font-size: 25px
+        +r(1024)
+            font-size: 20px
+        +r(768)
+            padding-right: 30px
+            font-size: 18px
+
+    svg
+        transition: transform .5s ease
+        transform: rotate(0deg)
+        display: inline-block
+        min-width: 20px
+        min-height: 20px
+        +r(1024)
+            max-width: 15px
+            max-height: 15px
+
+        
+
+.accordion__body
+    font-size: 20px
+    line-height: 130%
+    padding: 30px
+    color: #5f6c7b
+    line-height: 1.5
+    display: none
+    +r(1280)
+        font-size: 16px
+    +r(1024)
+        font-size: 14px
+    +r(768)
+        padding: 15px
+
+    .open-accordion &
+        display: block
+
+.open-accordion .accordion__header .accordion__text
+    color: $purple
+
+.open-accordion .accordion__header svg
+    transform: rotate(-135deg)
+    transition: transform .5s ease
+    fill: $purple
+    
+.open-accordion .accordion__header svg rect
+    fill: $purple
+

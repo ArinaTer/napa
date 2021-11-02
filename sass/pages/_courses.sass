@@ -1,0 +1,75 @@
+.courses
+    margin: 30px 0 60px
+    +r(1280)
+        margin: 30px 0 40px
+    +r(768)
+        margin: 20px 0
+
+    .courses__content
+        padding: 60px
+        position: relative
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+    .headline__title
+        border-bottom: 1px solid $b
+        padding-bottom: 30px
+        padding-top: 30px
+        +r(1280)
+            padding-top: 30px
+        +r(768)
+            padding-top: 40px
+
+    .courses__search
+        justify-content: space-between
+        align-items: flex-end
+        position: absolute
+        right: 60px
+        top: 125px
+        +r(1600)
+            top: 130px
+        +r(1280)
+            top: 90px
+            padding: 20px 0 
+        +r(768)
+            grid-gap: 10px
+            position: absolute
+            top: 0
+            right: 15px
+
+        svg
+            +r(1280)
+                max-width: 40px
+                height: 40px
+                
+        .instruments
+            display: none
+            +r(768)
+                display: block
+
+    .section__links
+        padding: 30px 0 0
+        justify-content: space-between
+        align-items: center
+        +r(768)
+            padding: 15px 0 0
+            align-items: flex-end
+            justify-content: end
+
+    .links__item
+        grid-gap: 10px
+        +r(768)
+            display: none
+
+    .links__text
+        font-size: 20px
+        line-height: 100%
+        +r(1280)
+            font-size: 18px
+        span
+            font-size: 30px
+            line-height: 100%
+            +r(1280)
+                font-size: 25px

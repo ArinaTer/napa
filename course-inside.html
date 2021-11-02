@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Страницы курса</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+</head>
+<body data-scroll-container>
+
+    <div class="mobile__menu">
+        <button class="mobile__menu--close">
+            <img src="img/mobile-close.svg" alt="">
+        </button>
+        <div class="mobile__menu--left">
+            <a href="index.html" class="mobile__menu--logo"><img src="img/logo-white.svg" alt=""></a>
+            <div class="mobile__menu--menu">
+                <span>Меню</span>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="blog.html"></a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="companies.html">Компаниям</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile__menu--right">
+            <div class="mobile__menu--direction">
+                <span>Все направления</span>
+                <ul>
+                    <li><a href="course-inside.html">Дизайн</a></li>
+                    <li><a href="course-inside.html">Управление</a></li>
+                    <li><a href="course-inside.html">Программирование</a></li>
+                </ul>
+            </div>
+            <div class="ul__social">
+                <div class="social__item flex">
+                    <a href="#" class="social__link">
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28.0488 5.77738L24.0879 24.4571C23.7891 25.7754 23.0098 26.1036 21.9024 25.4825L15.8672 21.0352L12.9551 23.836C12.6328 24.1582 12.3633 24.4278 11.7422 24.4278L12.1758 18.2813L23.3613 8.17386C23.8477 7.74027 23.2559 7.50003 22.6055 7.93363L8.77736 16.6407L2.82424 14.7774C1.52932 14.3731 1.50588 13.4825 3.09377 12.8614L26.3789 3.89066C27.4571 3.48636 28.4004 4.13089 28.0488 5.77738Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.8566 7.19627C23.584 6.16979 22.7808 5.36137 21.761 5.08703C19.9124 4.5885 12.5001 4.5885 12.5001 4.5885C12.5001 4.5885 5.08773 4.5885 3.23917 5.08703C2.21933 5.36142 1.41612 6.16979 1.14351 7.19627C0.648193 9.05682 0.648193 12.9387 0.648193 12.9387C0.648193 12.9387 0.648193 16.8205 1.14351 18.6811C1.41612 19.7076 2.21933 20.4823 3.23917 20.7566C5.08773 21.2552 12.5001 21.2552 12.5001 21.2552C12.5001 21.2552 19.9124 21.2552 21.761 20.7566C22.7808 20.4823 23.584 19.7076 23.8566 18.6811C24.3519 16.8205 24.3519 12.9387 24.3519 12.9387C24.3519 12.9387 24.3519 9.05682 23.8566 7.19627ZM10.0758 16.4631V9.41424L16.2711 12.9388L10.0758 16.4631Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5049 7.30664C9.39941 7.30664 6.89453 9.81152 6.89453 12.917C6.89453 16.0225 9.39941 18.5273 12.5049 18.5273C15.6104 18.5273 18.1152 16.0225 18.1152 12.917C18.1152 9.81152 15.6104 7.30664 12.5049 7.30664ZM12.5049 16.5645C10.498 16.5645 8.85742 14.9287 8.85742 12.917C8.85742 10.9053 10.4932 9.26953 12.5049 9.26953C14.5166 9.26953 16.1523 10.9053 16.1523 12.917C16.1523 14.9287 14.5117 16.5645 12.5049 16.5645ZM19.6533 7.07715C19.6533 7.80469 19.0674 8.38574 18.3447 8.38574C17.6172 8.38574 17.0361 7.7998 17.0361 7.07715C17.0361 6.35449 17.6221 5.76855 18.3447 5.76855C19.0674 5.76855 19.6533 6.35449 19.6533 7.07715ZM23.3691 8.40527C23.2861 6.65234 22.8857 5.09961 21.6016 3.82031C20.3223 2.54102 18.7695 2.14062 17.0166 2.05273C15.21 1.9502 9.79492 1.9502 7.98828 2.05273C6.24023 2.13574 4.6875 2.53613 3.40332 3.81543C2.11914 5.09473 1.72363 6.64746 1.63574 8.40039C1.5332 10.207 1.5332 15.6221 1.63574 17.4287C1.71875 19.1816 2.11914 20.7344 3.40332 22.0137C4.6875 23.293 6.23535 23.6934 7.98828 23.7812C9.79492 23.8838 15.21 23.8838 17.0166 23.7812C18.7695 23.6982 20.3223 23.2979 21.6016 22.0137C22.8809 20.7344 23.2812 19.1816 23.3691 17.4287C23.4717 15.6221 23.4717 10.2119 23.3691 8.40527ZM21.0352 19.3672C20.6543 20.3242 19.917 21.0615 18.9551 21.4473C17.5146 22.0186 14.0967 21.8867 12.5049 21.8867C10.9131 21.8867 7.49023 22.0137 6.05469 21.4473C5.09766 21.0664 4.36035 20.3291 3.97461 19.3672C3.40332 17.9268 3.53516 14.5088 3.53516 12.917C3.53516 11.3252 3.4082 7.90234 3.97461 6.4668C4.35547 5.50977 5.09277 4.77246 6.05469 4.38672C7.49512 3.81543 10.9131 3.94727 12.5049 3.94727C14.0967 3.94727 17.5195 3.82031 18.9551 4.38672C19.9121 4.76758 20.6494 5.50488 21.0352 6.4668C21.6064 7.90723 21.4746 11.3252 21.4746 12.917C21.4746 14.5088 21.6064 17.9316 21.0352 19.3672Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M18.3174 14.4844L19.0117 9.95996H14.6704V7.02393C14.6704 5.78613 15.2769 4.57959 17.2212 4.57959H19.1948V0.727539C19.1948 0.727539 17.4038 0.421875 15.6914 0.421875C12.1162 0.421875 9.7793 2.58887 9.7793 6.51172V9.95996H5.80518V14.4844H9.7793V25.4219H14.6704V14.4844H18.3174Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="25" height="25" fill="white" transform="translate(0 0.421875)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main data-scrollbar>
+        <div id="page-content">
+
+            <!-- header -->
+            <header class="header">
+                <div class="container">
+                    <div class="header__menu">
+                        <div class="header__item flex">
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img src="img/logo.svg" alt="Bobur Alikhanov" />
+                                </a>
+                            </div>
+                            <div class="header__btn">
+                                <a href="about.html" class="btn"> О нас</a>
+                                <a href="blog.html" class="btn">Блог</a>
+                            </div>
+                        </div>
+                        <div class="header__item flex">
+                            <div class="header__btn">
+                                <a href="courses.html" class="btn btn-active">Курсы</a>
+                            </div>
+                        </div>
+                        <div class="header__item flex">
+                            <div class="header__btn">
+                                <a href="companies.html" class="btn">Компаниям</a>
+                                <a href="contact.html" class="btn">Контакты</a>
+                                <a href="login.html" class="btn--item">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="user">
+                                            <path id="Path 4"
+                                                d="M4.58337 16.25C4.58337 16.25 7.50004 15 8.33337 14.1667C9.16671 13.3333 6.66671 13.3333 6.66671 9.16667C6.66671 5 10 5 10 5C10 5 13.3334 5 13.3334 9.16667C13.3334 13.3333 10.8334 13.3333 11.6667 14.1667C12.5 15 15.4167 16.25 15.4167 16.25"
+                                                stroke="#722CF6" stroke-linecap="round" />
+                                            <path id="Oval" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.99996 18.3332C14.6023 18.3332 18.3333 14.6022 18.3333 9.99984C18.3333 5.39746 14.6023 1.6665 9.99996 1.6665C5.39759 1.6665 1.66663 5.39746 1.66663 9.99984C1.66663 14.6022 5.39759 18.3332 9.99996 18.3332Z"
+                                                stroke="#722CF6" />
+                                        </g>
+                                    </svg>
+                                    Войти
+                                </a>
+                                <button class="burger">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- course-banner -->
+            <section class="course-banner banner">
+                <div class="container">
+                    <div class="banner--item flex">
+                        <div class="banner__content">
+                            <div class="block__title">
+                                <div class="title--white">Профессия</div>
+                            </div>
+                            <div class="banner__img">
+                                <img src="img/banner.png" alt="">
+                            </div>
+                            <div class="banner__title">Графический<br /> дизайнер</div>
+                            <p class="banner__subtitle">Курсы для корпоративного<br /> обучения: предложим готовое<br />
+                                решение или разработаем<br /> программу под ваш запрос</p>
+                            <a href="#" class="btn">Записаться на курс</a>
+                        </div>
+                        <div class="banner__img">
+                            <img src="img/banner.png" alt="">
+                        </div>
+                        <div class="banner__date flex">
+                            <div class="date__sale">
+                                <div class="sale">
+                                    <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M50.5 100.821C58.0702 100.821 64.3306 95.2134 65.3536 87.9252C65.4107 87.5183 65.9051 87.3135 66.2332 87.5609C72.1101 91.9911 80.5023 91.5297 85.8553 86.1767C91.2083 80.8237 91.6696 72.4314 87.2393 66.5546C86.9919 66.2264 87.1967 65.7321 87.6036 65.6749C94.8919 64.6521 100.5 58.3916 100.5 50.8213C100.5 43.2511 94.8921 36.9906 87.6039 35.9677C87.1969 35.9106 86.9922 35.4162 87.2395 35.0881C91.6698 29.2112 91.2084 20.819 85.8554 15.466C80.5024 10.113 72.1101 9.65163 66.2333 14.0819C65.9051 14.3293 65.4108 14.1245 65.3536 13.7176C64.3308 6.42931 58.0703 0.821289 50.5 0.821289C42.9298 0.821289 36.6693 6.42921 35.6464 13.7174C35.5893 14.1243 35.0949 14.3291 34.7668 14.0817C28.8899 9.6515 20.4977 10.1129 15.1447 15.4658C9.79168 20.8189 9.33034 29.2111 13.7607 35.088C14.008 35.4162 13.8033 35.9105 13.3963 35.9676C6.10803 36.9905 0.5 43.251 0.5 50.8213C0.5 58.3915 6.10791 64.6519 13.3961 65.6749C13.803 65.732 14.0078 66.2264 13.7604 66.5545C9.33022 72.4314 9.79159 80.8236 15.1446 86.1766C20.4976 91.5296 28.8899 91.9909 34.7667 87.5606C35.0949 87.3132 35.5892 87.518 35.6463 87.9249C36.6692 95.2132 42.9297 100.821 50.5 100.821Z"
+                                            fill="#FFE926" />
+                                    </svg>
+                                    <p class="sale__text">-40%</p>
+                                </div>
+                            </div>
+                            <div class="date__deadline">
+                                <p class="deadline__text">09 <span class="deadline__text--item">месяца</span></p>
+                            </div>
+                        </div>
+                        <div class="date__start">
+                            <div class="start__text">Старт <span class="start__text--item">12</span> июня</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- course-info -->
+            <section class="course-info">
+                <div class="container">
+                    <div class="course-info__content white flex">
+                        <div class="course-info__list">
+                            <div class="list__title">Заработок <span class="list__text">с 4 месяца</span></div>
+                        </div>
+                        <div class="course-info__list">
+                            <div class="list__title">Помощь <span class="list__text">в трудоустройстве</span></div>
+                        </div>
+                        <div class="course-info__list">
+                            <div class="list__title">Обучение <span class="list__text">на практике</span></div>
+                        </div>
+                        <div class="course-info__list">
+                            <div class="list__title">Доступ к курсу <span class="list__text">навсегда</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- choses-course -->
+            <section class="choses-course">
+                <div class="container">
+                    <div class="choses-course__content white">
+                        <div class="choses-course__title">Кому подойдёт этот курс</div>
+                        <div class="choses-course__list flex">
+                            <div class="choses-course__list--item">
+                                <div class="list__icon">
+                                    <svg width="100" height="101" viewBox="0 0 100 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.5198 32.2347C25.159 28.4813 41.6579 32.3668 55.1864 43.5463C68.927 54.9009 75.8554 70.6827 74.2682 83.932"
+                                            stroke="white" stroke-width="3" />
+                                        <path
+                                            d="M42.0918 90.9133C38.9142 80.7439 41.7109 65.139 50.3236 50.2215C58.9105 35.3486 70.9796 25.1407 81.3546 22.7678"
+                                            stroke="white" stroke-width="3" />
+                                        <path
+                                            d="M47.6748 8.41489C46.9231 16.5157 43.8156 26.0391 38.4393 35.3511C30.3817 49.3073 19.3648 59.0876 10.0057 61.6876"
+                                            stroke="white" stroke-width="3" />
+                                        <circle cx="50.0002" cy="50.0815" r="41.6667" stroke="white" stroke-width="3" />
+                                    </svg>
+                                </div>
+                                <div class="list__info">
+                                    <div class="info__title">Новичкам в дизайне</div>
+                                    <p class="info__text">Вы полностью погрузитесь в сферу графического дизайна — от
+                                        работы с
+                                        основными программами до презентации своих услуг, а по окончании
+                                        программы
+                                        соберёте
+                                        портфолио и найдёте работу.</p>
+                                </div>
+                            </div>
+                            <div class="choses-course__list--item">
+                                <div class="list__icon">
+                                    <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38.0794 16.7481C38.0794 12.1458 41.8104 8.41479 46.4128 8.41479C51.0151 8.41479 54.7461 12.1458 54.7461 16.7481V25.0815H75.5794V45.9148H83.9128C88.5151 45.9148 92.2461 49.6457 92.2461 54.2481C92.2461 58.8505 88.5151 62.5815 83.9128 62.5815H75.5794V83.4148H54.7461V75.0815C54.7461 70.4791 51.0151 66.7481 46.4128 66.7481C41.8104 66.7481 38.0794 70.4791 38.0794 75.0815V83.4148H17.2461V62.5815H25.5794C30.1818 62.5815 33.9128 58.8505 33.9128 54.2481C33.9128 49.6457 30.1818 45.9148 25.5794 45.9148H17.2461V25.0815H38.0794V16.7481Z"
+                                            stroke="white" stroke-width="3" />
+                                    </svg>
+                                </div>
+                                <div class="list__info">
+                                    <div class="info__title">Тем, кто хочет повысить навыки</div>
+                                    <p class="info__text">Вы займётесь практикой под контролем преподавателей, узнаете
+                                        всю необходимую теорию, повысите качество работы и сможете
+                                        увеличить
+                                        свой доход.</p>
+                                </div>
+                            </div>
+                            <div class="choses-course__list--item">
+                                <div class="list__icon">
+                                    <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M91.8257 50.9038L79.3257 63.4038L66.8257 50.9038" stroke="white"
+                                            stroke-width="3" stroke-linecap="round" />
+                                        <path
+                                            d="M45.9925 84.2372C27.583 84.2372 12.6592 69.3134 12.6592 50.9039C12.6592 32.4944 27.583 17.5706 45.9925 17.5706C64.402 17.5706 79.3259 32.4944 79.3259 50.9039V59.2372"
+                                            stroke="white" stroke-width="3" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="list__info">
+                                    <div class="info__title">Тем, кто хочет сменить сферу деятельности</div>
+                                    <p class="info__text">Вы узнаете об особенностях работы графического дизайнера,
+                                        будете учиться у лидеров рынка («Логомашина», Nimax, PINKMAN), а
+                                        по
+                                        итогу — сможете получить приглашение на стажировку.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- learnne -->
+            <section class="learnne">
+                <div class="container">
+                    <div class="learnne__content white">
+                        <div class="block__title">
+                            <div class="title">Чему вы научитесь</div>
+                        </div>
+                        <div class="learnne__list flex">
+                            <div class="learnne-animation learnne__info flex">
+                                <div class="info__num">01</div>
+                                <div class="info__text">Самостоятельно создавать логотипы</div>
+                            </div>
+                            <div class="learnne-animation learnne__info--item flex">
+                                <div class="info__num">02</div>
+                                <div class="info__text">Оформлять свои первые проекты
+                                    в портфолио</div>
+                            </div>
+                            <div class="learnne-animation learnne__info flex">
+                                <div class="info__num">03</div>
+                                <div class="info__text">Комплексно брифовать клиента</div>
+                            </div>
+                            <div class="learnne-animation learnne__info flex">
+                                <div class="info__num">04</div>
+                                <div class="info__text">Разбираться в брендинге</div>
+                            </div>
+                            <div class="learnne-animation learnne__info--item flex">
+                                <div class="info__num">05</div>
+                                <div class="info__text">Владеть основными инструментами графического дизайна</div>
+                            </div>
+                            <div class="learnne-animation learnne__info flex">
+                                <div class="info__num">06</div>
+                                <div class="info__text">Разрабатывать фирменный стиль</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section__form -->
+            <section class="section__form">
+                <div class="container">
+                    <div class="form__content white">
+                        <div class="block__title flex">
+                            <div class="subtitle">Цепляющий текст<br />
+                                после просмотра курса</div>
+                            <p class="text">Если у вас есть вопросы о формате или вы не знаете что
+                                выбрать,оставьте<br />
+                                свой
+                                номер: мы позвоним, чтобы ответить на все вашивопросы.</p>
+                        </div>
+                        <div class="form__block">
+                            <form id="2" method="POST" autocomplete="off" id="2">
+                                <div class="form__block-1">
+                                    <div class="form__group">
+                                        <input class="input" type="text" name="name" placeholder="Имя" required />
+                                    </div>
+                                    <div class="form__group">
+                                        <input class="input" type="tel" name="phone" placeholder="Телефон" required />
+                                    </div>
+                                    <div class="form__group">
+                                        <button class="form-btn" type="submit">Отправить заявку</button>
+                                    </div>
+                                </div>
+                                <div class="form__block-2">
+                                    <div class="form__group">
+                                        <label for="" class="label">Отправляя заявку, <a href="#"><u>я соглашаюсь на
+                                                    обработку</u></a> персональных
+                                            данных</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- course-img -->
+            <section class="course-img">
+                <div class="container">
+                    <div class="white">
+                        <img src="img/course-img.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- course-gallery -->
+            <section class="course-gallery">
+                <div class="container">
+                    <div class="course-gallery__content white flex">
+                        <div class="block__title">
+                            <div class="title">Галерея</div>
+                            <div class="subtitle">Классический<br />текст Lorem<br />Ipsum XVI века</div>
+                            <p class="text">Собираем лучшие вакансии в<br /> отрасли, готовим к интервью и<br />
+                                рекомендуем
+                                вас
+                                компаниям-<br />партнёрам.</p>
+                        </div>
+                        <div class="course-gallery__interest flex">
+                            <div class="interest__theory">
+                                <div class="theory__text">30%<span class="interest__theory--item">теория</span></div>
+                            </div>
+                            <div class="interest__practice">
+                                <div class="practice__text">70%<span class="interest__practice--item">практика</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- training -->
+            <section class="training">
+                <div class="container">
+                    <div class="training__content white">
+                        <div class="block__title">
+                            <div class="title--white">Как проходит обучение</div>
+                        </div>
+                        <div class="training__list flex">
+                            <div class="list__info">
+                                <div>
+                                    <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38.0794 16.7481C38.0794 12.1458 41.8104 8.41479 46.4128 8.41479C51.0151 8.41479 54.7461 12.1458 54.7461 16.7481V25.0815H75.5794V45.9148H83.9128C88.5151 45.9148 92.2461 49.6457 92.2461 54.2481C92.2461 58.8505 88.5151 62.5815 83.9128 62.5815H75.5794V83.4148H54.7461V75.0815C54.7461 70.4791 51.0151 66.7481 46.4128 66.7481C41.8104 66.7481 38.0794 70.4791 38.0794 75.0815V83.4148H17.2461V62.5815H25.5794C30.1818 62.5815 33.9128 58.8505 33.9128 54.2481C33.9128 49.6457 30.1818 45.9148 25.5794 45.9148H17.2461V25.0815H38.0794V16.7481Z"
+                                            stroke="white" stroke-width="3" />
+                                    </svg>
+                                    <div class="info__title">Изучаете тему</div>
+                                    <div class="info__text">В курсе — практические<br /> видеоуроки.</div>
+                                </div>
+                                <div class="info__num">01</div>
+                            </div>
+                            <div class="list__info">
+                                <div>
+                                    <svg width="100" height="101" viewBox="0 0 100 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="dashboard">
+                                            <rect id="Rectangle" x="8.3335" y="9.21423" width="83.3333" height="83.3333"
+                                                stroke="white" stroke-width="3" stroke-linejoin="round" />
+                                            <path id="Path 2" d="M45.8335 30.0475H70.8335" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 2_2" d="M45.8335 50.8809H70.8335" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 2_3" d="M45.8335 71.7141H70.8335" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Oval" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M29.1667 34.2142C31.4679 34.2142 33.3333 32.3487 33.3333 30.0475C33.3333 27.7463 31.4679 25.8809 29.1667 25.8809C26.8655 25.8809 25 27.7463 25 30.0475C25 32.3487 26.8655 34.2142 29.1667 34.2142Z"
+                                                fill="white" />
+                                            <path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M29.1667 55.0476C31.4679 55.0476 33.3333 53.1821 33.3333 50.8809C33.3333 48.5797 31.4679 46.7142 29.1667 46.7142C26.8655 46.7142 25 48.5797 25 50.8809C25 53.1821 26.8655 55.0476 29.1667 55.0476Z"
+                                                fill="white" />
+                                            <path id="Oval_3" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M29.1667 75.8808C31.4679 75.8808 33.3333 74.0153 33.3333 71.7141C33.3333 69.413 31.4679 67.5475 29.1667 67.5475C26.8655 67.5475 25 69.413 25 71.7141C25 74.0153 26.8655 75.8808 29.1667 75.8808Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <div class="info__title">Выполняете задания</div>
+                                    <div class="info__text">В том темпе, в котором вам удобно.</div>
+                                </div>
+                                <div class="info__num">02</div>
+                            </div>
+                            <div class="list__info">
+                                <div>
+                                    <svg width="100" height="101" viewBox="0 0 100 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="cup">
+                                            <path id="Path 8" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M25 9.29993V62.7999C25 67.7705 29.0294 71.7999 34 71.7999H66C70.9706 71.7999 75 67.7705 75 62.7999V9.29993H25Z"
+                                                stroke="white" stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 42" d="M29.1665 88.4666H70.8332" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 43" d="M50.0002 71.7999V88.4666" stroke="white"
+                                                stroke-width="3" />
+                                            <path id="Path 8_2" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M25 21.7999H17.3333C12.3628 21.7999 8.33333 25.8294 8.33333 30.7999L8.33333 37.7999C8.33333 42.7705 12.3628 46.7999 17.3333 46.7999H25L25 21.7999Z"
+                                                stroke="white" stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 8_3" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M75 46.7999H82.6667C87.6372 46.7999 91.6667 42.7705 91.6667 37.7999V30.7999C91.6667 25.8294 87.6372 21.7999 82.6667 21.7999H75V46.7999Z"
+                                                stroke="white" stroke-width="3" stroke-linecap="round" />
+                                        </g>
+                                    </svg>
+                                    <div class="info__title">Работаете с преподавателем</div>
+                                    <div class="info__text">Закрепляете знания и исправляете ошибки.</div>
+                                </div>
+                                <div class="info__num">03</div>
+                            </div>
+                            <div class="list__info">
+                                <div>
+                                    <svg width="100" height="101" viewBox="0 0 100 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.3335 53.0499L43.7502 63.4666L66.6668 40.5499" stroke="white"
+                                            stroke-width="3" stroke-linecap="round" />
+                                        <path
+                                            d="M49.9992 92.6336C56.2508 92.6336 61.4306 88.0443 62.3531 82.0508C62.4156 81.6447 62.9118 81.4391 63.2432 81.6821C68.1335 85.2679 75.0413 84.8504 79.4619 80.4298C83.8825 76.0092 84.2999 69.1013 80.7141 64.211C80.4711 63.8796 80.6767 63.3834 81.0828 63.3209C87.0764 62.3985 91.6659 57.2187 91.6659 50.967C91.6659 44.7153 87.0765 39.5356 81.083 38.6131C80.6769 38.5505 80.4713 38.0544 80.7143 37.723C84.3001 32.8327 83.8827 25.9248 79.4621 21.5042C75.0414 17.0836 68.1335 16.6662 63.2432 20.252C62.9118 20.495 62.4156 20.2895 62.3531 19.8833C61.4307 13.8898 56.2509 9.30029 49.9992 9.30029C43.7475 9.30029 38.5678 13.8897 37.6453 19.8832C37.5828 20.2893 37.0866 20.4948 36.7552 20.2518C31.8649 16.6661 24.957 17.0835 20.5364 21.5041C16.1158 25.9247 15.6984 32.8326 19.2842 37.723C19.5272 38.0544 19.3217 38.5505 18.9155 38.613C12.922 39.5355 8.33252 44.7153 8.33252 50.967C8.33252 57.2186 12.9219 62.3983 18.9154 63.3209C19.3215 63.3834 19.527 63.8795 19.284 64.2109C15.6983 69.1013 16.1157 76.0091 20.5363 80.4297C24.9569 84.8503 31.8648 85.2677 36.7552 81.6819C37.0866 81.4389 37.5828 81.6444 37.6453 82.0506C38.5677 88.0441 43.7475 92.6336 49.9992 92.6336Z"
+                                            stroke="white" strokes-width="3" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="info__title">Защищаете дипломную работу</div>
+                                    <div class="info__text">И дополняете ею своё портфолио.</div>
+                                </div>
+                                <div class="info__num">04</div>
+                            </div>
+                            <div class="list__info">
+                                <div>
+                                    <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38.0794 16.7481C38.0794 12.1458 41.8104 8.41479 46.4128 8.41479C51.0151 8.41479 54.7461 12.1458 54.7461 16.7481V25.0815H75.5794V45.9148H83.9128C88.5151 45.9148 92.2461 49.6457 92.2461 54.2481C92.2461 58.8505 88.5151 62.5815 83.9128 62.5815H75.5794V83.4148H54.7461V75.0815C54.7461 70.4791 51.0151 66.7481 46.4128 66.7481C41.8104 66.7481 38.0794 70.4791 38.0794 75.0815V83.4148H17.2461V62.5815H25.5794C30.1818 62.5815 33.9128 58.8505 33.9128 54.2481C33.9128 49.6457 30.1818 45.9148 25.5794 45.9148H17.2461V25.0815H38.0794V16.7481Z"
+                                            stroke="white" stroke-width="3" />
+                                    </svg>
+                                    <div class="info__title">Изучаете тему</div>
+                                    <div class="info__text">В курсе — практические<br /> видеоуроки.</div>
+                                </div>
+                                <div class="info__num">01</div>
+                            </div>
+                            <div class="list__info">
+                                <div>
+                                    <svg width="100" height="101" viewBox="0 0 100 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="dashboard">
+                                            <rect id="Rectangle" x="8.3335" y="9.21423" width="83.3333" height="83.3333"
+                                                stroke="white" stroke-width="3" stroke-linejoin="round" />
+                                            <path id="Path 2" d="M45.8335 30.0475H70.8335" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 2_2" d="M45.8335 50.8809H70.8335" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 2_3" d="M45.8335 71.7141H70.8335" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Oval" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M29.1667 34.2142C31.4679 34.2142 33.3333 32.3487 33.3333 30.0475C33.3333 27.7463 31.4679 25.8809 29.1667 25.8809C26.8655 25.8809 25 27.7463 25 30.0475C25 32.3487 26.8655 34.2142 29.1667 34.2142Z"
+                                                fill="white" />
+                                            <path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M29.1667 55.0476C31.4679 55.0476 33.3333 53.1821 33.3333 50.8809C33.3333 48.5797 31.4679 46.7142 29.1667 46.7142C26.8655 46.7142 25 48.5797 25 50.8809C25 53.1821 26.8655 55.0476 29.1667 55.0476Z"
+                                                fill="white" />
+                                            <path id="Oval_3" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M29.1667 75.8808C31.4679 75.8808 33.3333 74.0153 33.3333 71.7141C33.3333 69.413 31.4679 67.5475 29.1667 67.5475C26.8655 67.5475 25 69.413 25 71.7141C25 74.0153 26.8655 75.8808 29.1667 75.8808Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <div class="info__title">Выполняете задания</div>
+                                    <div class="info__text">В том темпе, в котором вам удобно.</div>
+                                </div>
+                                <div class="info__num">02</div>
+                            </div>
+                            <div class="list__info">
+                                <div>
+                                    <svg width="100" height="101" viewBox="0 0 100 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="cup">
+                                            <path id="Path 8" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M25 9.29993V62.7999C25 67.7705 29.0294 71.7999 34 71.7999H66C70.9706 71.7999 75 67.7705 75 62.7999V9.29993H25Z"
+                                                stroke="white" stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 42" d="M29.1665 88.4666H70.8332" stroke="white"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 43" d="M50.0002 71.7999V88.4666" stroke="white"
+                                                stroke-width="3" />
+                                            <path id="Path 8_2" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M25 21.7999H17.3333C12.3628 21.7999 8.33333 25.8294 8.33333 30.7999L8.33333 37.7999C8.33333 42.7705 12.3628 46.7999 17.3333 46.7999H25L25 21.7999Z"
+                                                stroke="white" stroke-width="3" stroke-linecap="round" />
+                                            <path id="Path 8_3" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M75 46.7999H82.6667C87.6372 46.7999 91.6667 42.7705 91.6667 37.7999V30.7999C91.6667 25.8294 87.6372 21.7999 82.6667 21.7999H75V46.7999Z"
+                                                stroke="white" stroke-width="3" stroke-linecap="round" />
+                                        </g>
+                                    </svg>
+                                    <div class="info__title">Работаете с преподавателем</div>
+                                    <div class="info__text">Закрепляете знания и исправляете ошибки.</div>
+                                </div>
+                                <div class="info__num">03</div>
+                            </div>
+                            <div class="list__info">
+                                <div>
+                                    <svg width="100" height="101" viewBox="0 0 100 101" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.3335 53.0499L43.7502 63.4666L66.6668 40.5499" stroke="white"
+                                            stroke-width="3" stroke-linecap="round" />
+                                        <path
+                                            d="M49.9992 92.6336C56.2508 92.6336 61.4306 88.0443 62.3531 82.0508C62.4156 81.6447 62.9118 81.4391 63.2432 81.6821C68.1335 85.2679 75.0413 84.8504 79.4619 80.4298C83.8825 76.0092 84.2999 69.1013 80.7141 64.211C80.4711 63.8796 80.6767 63.3834 81.0828 63.3209C87.0764 62.3985 91.6659 57.2187 91.6659 50.967C91.6659 44.7153 87.0765 39.5356 81.083 38.6131C80.6769 38.5505 80.4713 38.0544 80.7143 37.723C84.3001 32.8327 83.8827 25.9248 79.4621 21.5042C75.0414 17.0836 68.1335 16.6662 63.2432 20.252C62.9118 20.495 62.4156 20.2895 62.3531 19.8833C61.4307 13.8898 56.2509 9.30029 49.9992 9.30029C43.7475 9.30029 38.5678 13.8897 37.6453 19.8832C37.5828 20.2893 37.0866 20.4948 36.7552 20.2518C31.8649 16.6661 24.957 17.0835 20.5364 21.5041C16.1158 25.9247 15.6984 32.8326 19.2842 37.723C19.5272 38.0544 19.3217 38.5505 18.9155 38.613C12.922 39.5355 8.33252 44.7153 8.33252 50.967C8.33252 57.2186 12.9219 62.3983 18.9154 63.3209C19.3215 63.3834 19.527 63.8795 19.284 64.2109C15.6983 69.1013 16.1157 76.0091 20.5363 80.4297C24.9569 84.8503 31.8648 85.2677 36.7552 81.6819C37.0866 81.4389 37.5828 81.6444 37.6453 82.0506C38.5677 88.0441 43.7475 92.6336 49.9992 92.6336Z"
+                                            stroke="white" strokes-width="3" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="info__title">Защищаете дипломную работу</div>
+                                    <div class="info__text">И дополняете ею своё портфолио.</div>
+                                </div>
+                                <div class="info__num">04</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- liders -->
+            <section class="liders">
+                <div class="container">
+                    <div class="liders__content white">
+                        <div class="block__title">
+                            <div class="title">Преподаватели</div>
+                        </div>
+                        <div class="liders__img flex">
+                            <div class="liders__card">
+                                <img src="img/liders-1.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-2.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-3.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-4.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                        </div>
+                        <div class="liders__img flex">
+                            <div class="liders__card">
+                                <img src="img/liders-5.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-6.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-7.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-8.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- price-form -->
+            <section class="price-form">
+                <div class="container flex">
+<!--                     <div class="price-animation price-sale white flex">
+                        <div class="pricse-sale__content">
+                            <div class="price__title">Стоимость<br />обучения</div>
+                            <div class="price__sum">
+                                <div class="price__new">6 100 000 <span class="price__new--item">сум /мес</span></div>
+                                <div class="price__old"><s>4 100 000</s><span class="price__old--item">сум /мес</span></div>
+                            </div>
+                            <div class="course__start">Старт курса: <span class="course__start--item">9 октября</span></div>
+                        </div>
+                        <div class="bg-color-sale">
+                            <img src="img/color-sale.png" alt="">
+                            <div class="sale">
+                                <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M50.5 100.821C58.0702 100.821 64.3306 95.2134 65.3536 87.9252C65.4107 87.5183 65.9051 87.3135 66.2332 87.5609C72.1101 91.9911 80.5023 91.5297 85.8553 86.1767C91.2083 80.8237 91.6696 72.4314 87.2393 66.5546C86.9919 66.2264 87.1967 65.7321 87.6036 65.6749C94.8919 64.6521 100.5 58.3916 100.5 50.8213C100.5 43.2511 94.8921 36.9906 87.6039 35.9677C87.1969 35.9106 86.9922 35.4162 87.2395 35.0881C91.6698 29.2112 91.2084 20.819 85.8554 15.466C80.5024 10.113 72.1101 9.65163 66.2333 14.0819C65.9051 14.3293 65.4108 14.1245 65.3536 13.7176C64.3308 6.42931 58.0703 0.821289 50.5 0.821289C42.9298 0.821289 36.6693 6.42921 35.6464 13.7174C35.5893 14.1243 35.0949 14.3291 34.7668 14.0817C28.8899 9.6515 20.4977 10.1129 15.1447 15.4658C9.79168 20.8189 9.33034 29.2111 13.7607 35.088C14.008 35.4162 13.8033 35.9105 13.3963 35.9676C6.10803 36.9905 0.5 43.251 0.5 50.8213C0.5 58.3915 6.10791 64.6519 13.3961 65.6749C13.803 65.732 14.0078 66.2264 13.7604 66.5545C9.33022 72.4314 9.79159 80.8236 15.1446 86.1766C20.4976 91.5296 28.8899 91.9909 34.7667 87.5606C35.0949 87.3132 35.5892 87.518 35.6463 87.9249C36.6692 95.2132 42.9297 100.821 50.5 100.821Z"
+                                        fill="#252525" />
+                                </svg>
+                                <p class="sale__text">-40%</p>
+                            </div>
+                            <div class="date-end">
+                                <p class="date-end__text">Скидка 40%<br />до 8 октября</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="price-animation price white">
+                        <div class="price__content">
+                            <div class="price--item flex">
+                                <div class="price__title">Стоимость<br />обучения</div>
+                                <div class="course__start none">Старт курса: <span class="course__start--item">9
+                                        октября</span>
+                                </div>
+                            </div>
+                            <div class="price__new">6 100 000 <span class="price__new--item">сум /мес</span></div>
+                            <div class="course__start in-active">Старт курса: <span class="course__start--item">9
+                                    октября</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-animation form__content white">
+                        <div class="block__title">
+                            <div class="subtitle">Цепляющий текст<br />после просмотра курсы</div>
+                        </div>
+                        <div class="form__block">
+                            <form id="2" method="POST" autocomplete="off" id="2">
+                                <div class="form__block-1">
+                                    <div class="form__group">
+                                        <input class="input" type="text" name="name" placeholder="Имя" required />
+                                    </div>
+                                    <div class="form__group">
+                                        <input class="input" type="tel" name="phone" placeholder="Телефон" required />
+                                    </div>
+                                </div>
+                                <div class="form__block-3">
+                                    <div class="form__group">
+                                        <input class="input" type="tel" name="phone" placeholder="Телефон" required />
+                                    </div>
+                                </div>
+                                <div class="form__block-2">
+                                    <div class="form__group">
+                                        <label for="" class="label">Отправляя заявку, <a href="#"><u>я соглашаюсь на
+                                                    обработку</u></a> персональных
+                                            данных</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <button class="form-btn" type="submit">Отправить заявку</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__content white">
+                        <div class="footer__item flex">
+                            <div class="footer__contacts flex">
+                                <div class="location">
+                                    <div class="location__item">
+                                        <div class="flex">
+                                            <div class="contact__title">Manzil</div>
+                                        </div>
+                                        <p class="contact__text">Toshkent sh,<br /> Universitetskaya, 4 ko'chasi</p>
+                                    </div>
+                                    <div class="location__item">
+                                        <div class="contact__title">Ish vaqti</div>
+                                        <p class="contact__text">Dushanba-Shanba 09:00-18:00</p>
+                                        <p class="contact__text">Yakshanba Dam olish kuni</p>
+                                    </div>
+                                </div>
+                                <div class="contacts">
+                                    <div class="contacts__item">
+                                        <div class="contact__title">Telefon raqam</div>
+                                        <a href="tel:+998 71 200-06-10" class="contact__text">+998 71 200-06-10</a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contact__title">Email</div>
+                                        <a href="mailto:ba@napa.uz" class="contact__text">ba@napa.uz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__menu flex">
+                                <div class="footer__menu--item">
+                                    <div class="contact__title">Меню</div>
+                                    <ul>
+                                        <li><a href="about.html" class="menu__link">О нас</a></li>
+                                        <li><a href="blog.html" class="menu__link">Блог</a></li>
+                                        <li><a href="courses.html" class="menu__link">Курсы</a></li>
+                                        <li><a href="companies.html" class="menu__link">Компаниям</a></li>
+                                        <li><a href="contact.html" class="menu__link">Контакты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__menu--item">
+                                    <div class="contact__title">Все направления</div>
+                                    <ul>
+                                        <li><a href="course-inside.html" class="menu__link">Дизайн</a></li>
+                                        <li><a href="course-inside.html" class="menu__link">Управление</a></li>
+                                        <li><a href="course-inside.html" class="menu__link">Программирование</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__social">
+                                <div class="social__item flex">
+                                    <a href="#" class="social__link">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.0488 5.77738L24.0879 24.4571C23.7891 25.7754 23.0098 26.1036 21.9024 25.4825L15.8672 21.0352L12.9551 23.836C12.6328 24.1582 12.3633 24.4278 11.7422 24.4278L12.1758 18.2813L23.3613 8.17386C23.8477 7.74027 23.2559 7.50003 22.6055 7.93363L8.77736 16.6407L2.82424 14.7774C1.52932 14.3731 1.50588 13.4825 3.09377 12.8614L26.3789 3.89066C27.4571 3.48636 28.4004 4.13089 28.0488 5.77738Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.8566 7.19627C23.584 6.16979 22.7808 5.36137 21.761 5.08703C19.9124 4.5885 12.5001 4.5885 12.5001 4.5885C12.5001 4.5885 5.08773 4.5885 3.23917 5.08703C2.21933 5.36142 1.41612 6.16979 1.14351 7.19627C0.648193 9.05682 0.648193 12.9387 0.648193 12.9387C0.648193 12.9387 0.648193 16.8205 1.14351 18.6811C1.41612 19.7076 2.21933 20.4823 3.23917 20.7566C5.08773 21.2552 12.5001 21.2552 12.5001 21.2552C12.5001 21.2552 19.9124 21.2552 21.761 20.7566C22.7808 20.4823 23.584 19.7076 23.8566 18.6811C24.3519 16.8205 24.3519 12.9387 24.3519 12.9387C24.3519 12.9387 24.3519 9.05682 23.8566 7.19627ZM10.0758 16.4631V9.41424L16.2711 12.9388L10.0758 16.4631Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5049 7.30664C9.39941 7.30664 6.89453 9.81152 6.89453 12.917C6.89453 16.0225 9.39941 18.5273 12.5049 18.5273C15.6104 18.5273 18.1152 16.0225 18.1152 12.917C18.1152 9.81152 15.6104 7.30664 12.5049 7.30664ZM12.5049 16.5645C10.498 16.5645 8.85742 14.9287 8.85742 12.917C8.85742 10.9053 10.4932 9.26953 12.5049 9.26953C14.5166 9.26953 16.1523 10.9053 16.1523 12.917C16.1523 14.9287 14.5117 16.5645 12.5049 16.5645ZM19.6533 7.07715C19.6533 7.80469 19.0674 8.38574 18.3447 8.38574C17.6172 8.38574 17.0361 7.7998 17.0361 7.07715C17.0361 6.35449 17.6221 5.76855 18.3447 5.76855C19.0674 5.76855 19.6533 6.35449 19.6533 7.07715ZM23.3691 8.40527C23.2861 6.65234 22.8857 5.09961 21.6016 3.82031C20.3223 2.54102 18.7695 2.14062 17.0166 2.05273C15.21 1.9502 9.79492 1.9502 7.98828 2.05273C6.24023 2.13574 4.6875 2.53613 3.40332 3.81543C2.11914 5.09473 1.72363 6.64746 1.63574 8.40039C1.5332 10.207 1.5332 15.6221 1.63574 17.4287C1.71875 19.1816 2.11914 20.7344 3.40332 22.0137C4.6875 23.293 6.23535 23.6934 7.98828 23.7812C9.79492 23.8838 15.21 23.8838 17.0166 23.7812C18.7695 23.6982 20.3223 23.2979 21.6016 22.0137C22.8809 20.7344 23.2812 19.1816 23.3691 17.4287C23.4717 15.6221 23.4717 10.2119 23.3691 8.40527ZM21.0352 19.3672C20.6543 20.3242 19.917 21.0615 18.9551 21.4473C17.5146 22.0186 14.0967 21.8867 12.5049 21.8867C10.9131 21.8867 7.49023 22.0137 6.05469 21.4473C5.09766 21.0664 4.36035 20.3291 3.97461 19.3672C3.40332 17.9268 3.53516 14.5088 3.53516 12.917C3.53516 11.3252 3.4082 7.90234 3.97461 6.4668C4.35547 5.50977 5.09277 4.77246 6.05469 4.38672C7.49512 3.81543 10.9131 3.94727 12.5049 3.94727C14.0967 3.94727 17.5195 3.82031 18.9551 4.38672C19.9121 4.76758 20.6494 5.50488 21.0352 6.4668C21.6064 7.90723 21.4746 11.3252 21.4746 12.917C21.4746 14.5088 21.6064 17.9316 21.0352 19.3672Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M18.3174 14.4844L19.0117 9.95996H14.6704V7.02393C14.6704 5.78613 15.2769 4.57959 17.2212 4.57959H19.1948V0.727539C19.1948 0.727539 17.4038 0.421875 15.6914 0.421875C12.1162 0.421875 9.7793 2.58887 9.7793 6.51172V9.95996H5.80518V14.4844H9.7793V25.4219H14.6704V14.4844H18.3174Z"
+                                                    fill="black" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="25" height="25" fill="white"
+                                                        transform="translate(0 0.421875)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__logo">
+                            <div class="logo__item flex">
+                                <a href="#">
+                                    <img src="img/logo.svg" alt="Bobur Alikhanov" />
+                                </a>
+                                <span class="footer__logo--item">© 2021, Bobir Alikhanov Academy</span>
+                                <a href="#" class="logo__yeko">
+                                    <img src="img/logo-yeko.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

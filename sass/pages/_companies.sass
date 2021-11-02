@@ -1,0 +1,256 @@
+// companies-banner
+.companies-banner
+    margin: 30px 0 60px
+    +r(1280)
+        margin: 30px 0 40px
+    +r(768)
+        margin: 20px 0
+
+    .banner__content
+        background-color: $f6
+        padding-bottom: 60px
+        +r(1280)
+            padding-bottom: 40px
+        +r(768)
+            padding-bottom: 20px
+
+    .banner__content--item
+        padding: 60px
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+    .banner__info
+        align-items: center
+        justify-content: center
+        grid-gap: 120px
+        +r(1280)
+            padding-top: 40px
+            grid-gap: 70px
+        +r(600)
+            align-items: baseline
+            grid-gap: 20px
+            padding-top: 20px
+            flex-direction: column
+
+    .banner__title
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        font-size: 80px
+        line-height: 100%
+        color: $w
+        +med
+        +r(1600)
+            font-size: 60px
+        +r(1280)
+            font-size: 50px
+        +r(1024)
+            font-size: 40px
+        +r(768)
+            font-size: 35px
+
+    .banner__subtitle
+        font-size: 20px
+        line-height: 130%
+        color: $w
+        padding-bottom: 30px
+        +r(1600)
+            padding-bottom: 20px
+            font-size: 18px
+        +r(1280)
+            padding-top: 20px
+            font-size: 16px
+        +r(1024)
+            padding-top: 50px
+            font-size: 14px
+        +r(768)
+            padding-top: 10px
+            font-size: 16px
+        br
+            +r(768)
+                display: none
+        span
+            display: flex
+            align-items: flex-end
+
+    .btn
+        text-align: center
+        padding: 20px 50px
+        background-color: $w
+        color: $f6
+        +pbold
+        font-size: 20px
+        line-height: 130%
+        border-radius: 15px
+        +r(1600)
+            font-size: 18px
+        +r(1280)
+            font-size: 16px
+
+    .banner__img
+        padding: 0
+        img
+            +r(768)
+                max-width: 100%
+                object-fit: cover
+                height: 155px
+
+// companies
+.companies
+    margin-bottom: 60px
+    +r(1280)
+        margin-bottom: 40px
+    +r(1024)
+        margin-bottom: 30px
+    +r(768)
+        margin-bottom: 20px
+
+    .companies__content
+        padding: 60px
+        justify-content: space-between
+        +r(1280)
+            grid-gap: 50px
+            padding: 40px
+        +r(800)
+            flex-direction: column
+            padding: 15px
+    .block__title
+        padding-right: 20px
+        max-width: 50%
+        flex-basis: 50%
+        +r(1024)
+            max-width: 100%
+            flex-basis: 100%
+        br
+            +r(1440)
+                display: none
+    .subtitle
+        padding: 70px 0 30px
+        +r(1280)
+            padding: 50px 0 30px
+        +r(1024)
+            padding: 40px 0 0
+
+    .companies__list
+        margin-top: 130px
+        padding: 70px
+        background-color: $f6
+        border-radius: 15px
+        +r(1600)
+            margin-top: 0
+            padding: 30px
+        +r(768)
+            padding: 30px 15px
+
+    .list__item
+        justify-content: space-between
+        grid-gap: 80px
+        +r(1600)
+            grid-gap: 30px
+        +r(497)
+            flex-direction: column
+            grid-gap: 20px
+
+    .list__block
+        padding: 45px 0 0
+        +r(1280)
+            padding: 20px 0 0
+        +r(768)
+            padding: 0
+
+    svg
+        +r(1280)
+            max-width: 80px
+        +r(1024)
+            max-width: 60px
+
+    .list__title--item
+        font-size: 30px
+        line-height: 100%
+        +bold
+        color: $w
+        border-bottom: 1px solid $w
+        padding-bottom: 30px
+        +r(1280)
+            font-size: 25px
+        +r(1024)
+            font-size: 20px
+        +r(768)
+            padding-bottom: 15px
+
+    .list__title
+        padding: 45px 0 30px
+        font-size: 30px
+        line-height: 100%
+        +med
+        color: $w
+        +r(1280)
+            padding: 20px 0
+            font-size: 20px
+        +r(1024)
+            font-size: 18px
+        +r(768)
+            padding: 0 0 20px
+
+    .list__text
+        font-size: 20px
+        line-height: 130%
+        color: $w
+        +r(1280)
+            font-size: 14px
+        +r(1024)
+            font-size: 12px
+
+// companies-form
+.companies-form
+
+    .text
+        padding-top: 30px
+        +r(768)
+            padding-top: 20px
+            padding-bottom: 30px
+
+    .form__block-1
+        margin-bottom: 30px
+        +r(768)
+            padding-top: 10px
+            margin-bottom: 0
+
+    .form__block-2
+        padding: 0
+        +r(768)
+            padding-top: 20px
+
+// companies-img
+.companies-img
+    margin-bottom: 60px
+    +r(1280)
+        margin-bottom: 40px
+    +r(768)
+        margin-bottom: 20px
+    img
+        +r(768)
+            height: 400px
+            object-fit: cover
+            border-radius: 15px
+
+// faq
+.faq
+    margin: 60px 0
+    +r(1280)
+        margin: 40px 0
+    +r(768)
+        margin: 20px 0
+    .faq__content
+        padding: 60px
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+.section__links--filter
+    margin-bottom: 50px
+    +r(768)
+        margin-bottom: 20px

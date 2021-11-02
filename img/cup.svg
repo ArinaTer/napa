@@ -1,0 +1,9 @@
+<svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cup">
+<path id="Path 8" fill-rule="evenodd" clip-rule="evenodd" d="M25 9.29993V62.7999C25 67.7705 29.0294 71.7999 34 71.7999H66C70.9706 71.7999 75 67.7705 75 62.7999V9.29993H25Z" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="Path 42" d="M29.1665 88.4666H70.8332" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="Path 43" d="M50.0002 71.7999V88.4666" stroke="white" stroke-width="3"/>
+<path id="Path 8_2" fill-rule="evenodd" clip-rule="evenodd" d="M25 21.7999H17.3333C12.3628 21.7999 8.33333 25.8294 8.33333 30.7999L8.33333 37.7999C8.33333 42.7705 12.3628 46.7999 17.3333 46.7999H25L25 21.7999Z" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="Path 8_3" fill-rule="evenodd" clip-rule="evenodd" d="M75 46.7999H82.6667C87.6372 46.7999 91.6667 42.7705 91.6667 37.7999V30.7999C91.6667 25.8294 87.6372 21.7999 82.6667 21.7999H75V46.7999Z" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</g>
+</svg>

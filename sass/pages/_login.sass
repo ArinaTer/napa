@@ -1,0 +1,139 @@
+.login
+    #page-content
+        padding-bottom: 0
+
+.form-page
+
+    .header__menu
+        padding-top: 0
+
+    .form-page-item
+        display: flex
+        justify-content: space-between
+        +r(768)
+            flex-direction: column
+
+    .form-page__content
+        padding: 40px 60px
+        flex-basis: 50%
+        max-width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        +r(1280)
+            padding: 30px 60px
+        +r(768)
+            max-width: 100%
+            height: auto
+            padding: 15px
+
+    .header__btn
+        display: none
+        +r(768)
+            display: flex
+
+        .btn--item
+            +r(768)
+                display: flex
+
+    .personal-cabinet
+        display: flex
+        flex-direction: column
+        align-items: center
+        +r(1600)
+            margin-top: 40px
+
+    .block__title
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: centers
+        padding: 40px 0
+        +r(1024)
+            padding: 30px 0
+
+    .form__block
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    .input
+        position: relative
+        width: 350px
+        margin-bottom: 20px
+
+    .form-btn
+        width: 350px
+        +r(1280)
+
+    .form__link
+        padding: 20px 0 5px
+        font-size: 16px
+        line-height: 130%
+        color: $purple
+        +r(1280)
+            font-size: 12px
+
+    .label
+        font-size: 16px
+        text-align: center
+        +r(1280)
+            font-size: 12px
+        a
+            color: $purple
+
+    .form__group
+        display: flex
+        align-self: baseline
+        padding-left: 10px
+
+    .label--item
+        font-size: 16px
+        line-height: 130%
+        padding-bottom: 15px
+        color: $b8
+
+    .input-group-append
+        position: absolute
+        top: 130px
+        right: 36px
+        +r(1280)
+            top: 115px
+        +r(1024)
+            top: 102px
+            right: 30px
+        +r(768)
+            top: 130px
+
+    .input-group-append--item
+        position: absolute
+        top: 230px
+        right: 36px
+        +r(1280)
+            top: 203px
+        +r(1024)
+            top: 185px
+            right: 30px
+        +r(768)
+            top: 230px
+
+    .mdi
+        color: $b8
+        font-size: 20px
+
+    .form-page__img
+        width: 100%
+        max-width: 50%
+        flex-basis: 50%
+        background: url(../img/form.jpg) center right no-repeat
+        background-size: cover
+        +r(765)
+            display: none
+        // img
+        //     object-position: center
+        //     object-fit: cover
+        //     overflow: hidden
+        //     height: 100%
+        //     width: 100%

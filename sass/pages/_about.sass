@@ -1,0 +1,261 @@
+.about
+    margin: 30px 0 60px
+    +r(1280)
+        margin: 30px 0 40px
+    +r(1024)
+        margin: 20px 0 30px
+    +r(768)
+        margin: 20px 0
+
+    .about__content
+        padding: 60px
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+    .about__title
+        font-size: 80px
+        line-height: 100%
+        padding: 70px 0 60px
+        +med
+        +r(1600)
+            font-size: 70px
+        +r(1280)
+            font-size: 50px
+        +r(1024)
+            font-size: 40px
+        +r(768)
+            padding: 30px 0 20px
+            font-size: 30px
+
+    .about__title--item
+        display: inline-block
+        font-size: 80px
+        line-height: 100%
+        color: $purple
+        +med
+        +r(1600)
+            font-size: 70px
+        +r(1280)
+            font-size: 50px
+        +r(1024)
+            font-size: 40px
+        +r(768)
+            font-size: 30px
+
+    .video
+        display: flex
+        justify-content: space-between
+        margin: 0
+        +r(768)
+            flex-direction: column
+            svg
+                +r(1280)
+                    max-width: 55px
+
+        &__inner
+            width: 80%
+            height: 650px
+            +r(1280)
+                max-width: 900px
+                height: 500px
+            +r(1024)
+                max-width: 720px
+                height: 380px
+            +r(768)
+                width: 100%
+                height: 450px
+            .video__play
+                +r(1280)
+                    max-width: 160px
+                    height: 140px
+                +r(1024)
+                    max-width: 140px
+                    height: 120px
+
+// author
+.author
+    margin: 60px 0
+    +r(1280)
+        margin: 40px 0
+    +r(1024)
+        margin: 30px 0
+    +r(768)
+        margin: 20px 0
+
+    .author__content
+        padding: 120px 160px
+        position: relative
+        background-color: $f6
+        justify-content: center
+        +r(1280)
+            padding: 90px 75px
+        +r(768)
+            flex-direction: column
+            padding: 50px  20px
+
+    .author__img
+        position: relative
+        +r(768)
+            display: flex
+            align-items: center
+            justify-content: center
+        img
+            z-index: 1
+            +r(1600)
+                max-width: 450px
+                height: 450px
+            +r(1280)
+                max-width: 360px
+                height: 350px
+            +r(1024)
+                max-width: 285px
+                height: 285px
+            +r(768)
+                max-width: 250px
+                height: 250px
+            
+
+    .author__img--hooks
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 2
+        svg
+            +r(1280)
+                max-width: 90px
+            +r(1024)
+                max-width: 70px
+            +r(768)
+                max-width: 60px
+
+    .author__quote
+        position: relative
+        padding-left: -20px
+        margin-left: -30px
+        +r(768)
+            margin: 0
+
+    // .quote__circle
+    //     +r(768)
+    //         // display: none
+
+    .circle
+        width: 511px
+        height: 511px
+        border: 1px solid rgba(255, 255, 255, 0.2)
+        border-radius: 50%
+        +r(1600)
+            width: 450px
+            height: 450px
+        +r(1280)
+            width: 350px
+            height: 350px
+        +r(1024)
+            width: 285px
+            height: 285px
+        +r(768)
+            border: none
+
+    .circle--item
+        margin-left: -30px
+        display: block
+
+    .quote__item
+        position: absolute
+        top: 135px
+        left: 85px
+        +r(1024)
+            top: 65px
+        +r(768)
+            left: 15px
+            right: 15px
+
+    .quote__text
+        font-size: 40px
+        line-height: 100%
+        color: $w
+        +med
+        +r(1600)
+            font-size: 30px
+        +r(1280)
+            font-size: 25px
+        +r(1024)
+            font-size: 20px
+
+    .quote__text--author
+        padding-top: 45px
+        align-items: center
+        grid-gap: 85px
+        +r(1280)
+            padding-top: 30px
+        +r(768)
+            grid-gap: 1px
+            padding-top: 20px
+
+        img
+            +r(1280)
+                max-width: 150px
+            +r(1024)
+                max-width: 110px
+
+    .quote__text--item
+        font-size: 20px
+        line-height: 100%
+        color: $w
+        +r(1280)
+            font-size: 18px
+        +r(1024)
+            font-size: 14px
+
+// gallery
+.gallery
+    margin: 60px 0
+    +r(1280)
+        margin: 40px 0
+    +r(1024)
+        margin: 30px 0
+    +r(768)
+        margin: 20px 0
+
+    .gallery__content
+        padding: 60px
+        position: relative
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+    .gallery__slider
+        padding-top: 70px
+        +r(1280)
+            padding-top: 50px
+        img
+            +r(768)
+                object-fit: cover
+                border-radius: 15px
+                height: 400px
+
+    .slider__btn
+        display: flex
+        grid-gap: 15px
+        position: absolute
+        right: 60px
+        top: 60px
+        +r(1024)
+            right: 40px
+            top: 40px
+        +r(768)
+            right: 15px
+            top: 15px
+
+    .prev__btn
+        background-color: $purple
+        path
+            stroke: $w
+
+    .next__btn
+        background-color: $purple
+        path
+            stroke: $w

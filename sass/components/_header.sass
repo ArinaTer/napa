@@ -1,0 +1,228 @@
+.header__menu
+    display: flex
+    justify-content: space-between
+    padding-top: 30px
+    +r(1024)
+        padding-top: 20px
+    +r(768)
+        padding-top: 15px
+
+.header__item
+    grid-gap: 150px
+    +r(1600)
+        grid-gap: 80px
+    +r(1280)
+        grid-gap: 50px
+    +r(768)
+        grid-gap: 1px
+
+.header__logo
+    +r(1280)
+        max-width: 160px
+    +r(768)
+        max-width: 160px
+        height: 15px
+
+.header__btn
+    display: flex
+    grid-gap: 30px
+    position: relative
+    +r(1024)
+        grid-gap: 10px
+
+    .btn
+        display: flex
+        align-items: center
+        justify-content: center
+        grid-gap: 10px
+        padding: 10px 20px
+        border: 1px solid $b25
+        border-radius: 15px
+        font-size: 18px
+        line-height: 100%
+        color: $b
+        +r(1280)
+            font-size: 14px
+        +r(1024)
+            display: none
+        &-active
+            background-color: $purple
+            color: $w
+            border-color: $purple
+        &:hover
+            background-color: $purple
+            color: $w
+            border-color: $purple
+
+    .btn--item
+        display: flex
+        align-items: center
+        justify-content: center
+        grid-gap: 10px
+        margin-left: 50px
+        font-size: 18px
+        line-height: 100%
+        border-radius: 15px
+        width: 120px
+        height: 40px
+        box-sizing: border-box
+        border: 1px solid transparent
+        background-clip: padding-box, border-box
+        background-origin: padding-box, border-box
+        background-image: linear-gradient($f5, $f5), linear-gradient(#B08FEE, #722CF6)
+        position: relative
+        z-index: 6666
+        +r(1280)
+            max-width: 100px
+            height: 35px
+            font-size: 14px
+        +r(1024)
+            margin-left: 0
+        +r(768)
+            display: none
+
+.burger
+    display: none
+    +r(768)
+    border-radius: 15px
+    border: 1px solid #252525
+    width: 42px
+    height: 34px
+    transition: .2s ease
+    position: relative
+    z-index: 6666
+    &.is-active
+        background: $purple
+        border-color: $purple
+        +r(768)
+            background: $w
+            border-color: $w
+        span        
+            background: $w
+            +r(768)
+                background: $purple
+            &:first-child
+                transform: translateY(1px) rotate(45deg)
+            &:last-child
+                transform: translateY(-1px) rotate(-45deg)
+    span
+        width: 20px
+        height: 1px
+        background: #252525
+        display: block
+        transition: .3s ease
+        margin: 0 auto
+        &:first-child
+            transform: translateY(4px)
+        &:last-child
+            transform: translateY(-4px)
+    +r(1024)
+        display: block
+
+.mobile__menu
+    position: fixed
+    top: 0
+    left: 0
+    overflow-y: scroll
+    width: 100%
+    height: 100vh
+    background: $w
+    z-index: 5555
+
+    -webkit-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s
+    -webkit-transition: visibility 0s linear .55s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+    -o-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s
+    transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s
+    transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+    -webkit-transform: translateX(-100%)
+    -ms-transform: translateX(-100%)
+    transform: translateX(-100%)
+    overflow-y: auto
+    overflow-x: hidden
+    display: flex
+    +r(768)
+        flex-direction: column
+
+    &.is-open
+        -webkit-transform: translateX(0)
+        -ms-transform: translateX(0)
+        transform: translateX(0)
+        visibility: visible
+        -webkit-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s
+        -webkit-transition: visibility 0s linear 0s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+        -o-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s
+        transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s
+        transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+
+    &--left
+        width: 400px
+        height: 100%
+        background: $purple
+        border-top-right-radius: 15px
+        border-bottom-right-radius: 15px
+        padding: 20px 40px
+        +r(768)
+            width: 100%
+            border-top-right-radius: 0
+            border-bottom-right-radius: 15px
+            border-bottom-left-radius: 15px
+            padding: 15px
+
+    &--menu
+        margin-top: 70px
+        +r(768)
+            padding-left: 15px
+            margin-top: 50px
+        span
+            color: $w
+            font-size: 14px
+            margin-bottom: 20px
+            display: block
+            +preg
+        a
+            color: $w
+            +preg
+            font-size: 40px
+            display: block
+            margin-bottom: 10px
+            +r(768)
+                font-size: 30px
+                margin-bottom: 5px
+
+    &--right
+        padding: 130px 40px 20px 40px
+        +r(768)
+            padding: 40px 30px 30px
+            height: 100%
+        span
+            color: $purple
+            font-size: 14px
+            margin-bottom: 20px
+            display: block
+            +preg
+        a
+            color: $b25
+            +preg
+            font-size: 40px
+            display: block
+            margin-bottom: 10px
+            +r(768)
+                font-size: 30px
+
+    .ul__social
+        +r(768)
+            margin-top: 50px
+    
+    .social__item .social__link svg
+        max-width: 20px
+
+    &--close
+        display: block
+        width: 42px
+        height: 34px
+        position: absolute
+        top: 15px
+        right: 15px
+        z-index: 6666
+        background: $w
+        border-radius: 15px

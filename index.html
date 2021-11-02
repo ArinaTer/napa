@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Главная страница</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="noscroll">
+
+    <div id="preloader" class="preloader">
+        <div id="height_load" class="preloader__line"></div>
+        <div class="preloader__inner">
+            <div class="preloader__text">Образовательная платформа</div>
+            <div class="preloader__percent">
+                <div id="load_perc" class="preloader__percent--num">45</div>
+                <div class="preloader__percent--text">загрузка</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile__menu">
+        <button class="mobile__menu--close">
+            <img src="img/mobile-close.svg" alt="">
+        </button>
+        <div class="mobile__menu--left">
+            <a href="index.html" class="mobile__menu--logo"><img src="img/logo-white.svg" alt=""></a>
+            <div class="mobile__menu--menu">
+                <span>Меню</span>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="blog.html"></a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="companies.html">Компаниям</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile__menu--right">
+            <div class="mobile__menu--direction">
+                <span>Все направления</span>
+                <ul>
+                    <li><a href="courses.html">Дизайн</a></li>
+                    <li><a href="courses.html">Управление</a></li>
+                    <li><a href="courses.html">Программирование</a></li>
+                </ul>
+            </div>
+            <div class="ul__social">
+                <div class="social__item flex">
+                    <a href="#" class="social__link">
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28.0488 5.77738L24.0879 24.4571C23.7891 25.7754 23.0098 26.1036 21.9024 25.4825L15.8672 21.0352L12.9551 23.836C12.6328 24.1582 12.3633 24.4278 11.7422 24.4278L12.1758 18.2813L23.3613 8.17386C23.8477 7.74027 23.2559 7.50003 22.6055 7.93363L8.77736 16.6407L2.82424 14.7774C1.52932 14.3731 1.50588 13.4825 3.09377 12.8614L26.3789 3.89066C27.4571 3.48636 28.4004 4.13089 28.0488 5.77738Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.8566 7.19627C23.584 6.16979 22.7808 5.36137 21.761 5.08703C19.9124 4.5885 12.5001 4.5885 12.5001 4.5885C12.5001 4.5885 5.08773 4.5885 3.23917 5.08703C2.21933 5.36142 1.41612 6.16979 1.14351 7.19627C0.648193 9.05682 0.648193 12.9387 0.648193 12.9387C0.648193 12.9387 0.648193 16.8205 1.14351 18.6811C1.41612 19.7076 2.21933 20.4823 3.23917 20.7566C5.08773 21.2552 12.5001 21.2552 12.5001 21.2552C12.5001 21.2552 19.9124 21.2552 21.761 20.7566C22.7808 20.4823 23.584 19.7076 23.8566 18.6811C24.3519 16.8205 24.3519 12.9387 24.3519 12.9387C24.3519 12.9387 24.3519 9.05682 23.8566 7.19627ZM10.0758 16.4631V9.41424L16.2711 12.9388L10.0758 16.4631Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5049 7.30664C9.39941 7.30664 6.89453 9.81152 6.89453 12.917C6.89453 16.0225 9.39941 18.5273 12.5049 18.5273C15.6104 18.5273 18.1152 16.0225 18.1152 12.917C18.1152 9.81152 15.6104 7.30664 12.5049 7.30664ZM12.5049 16.5645C10.498 16.5645 8.85742 14.9287 8.85742 12.917C8.85742 10.9053 10.4932 9.26953 12.5049 9.26953C14.5166 9.26953 16.1523 10.9053 16.1523 12.917C16.1523 14.9287 14.5117 16.5645 12.5049 16.5645ZM19.6533 7.07715C19.6533 7.80469 19.0674 8.38574 18.3447 8.38574C17.6172 8.38574 17.0361 7.7998 17.0361 7.07715C17.0361 6.35449 17.6221 5.76855 18.3447 5.76855C19.0674 5.76855 19.6533 6.35449 19.6533 7.07715ZM23.3691 8.40527C23.2861 6.65234 22.8857 5.09961 21.6016 3.82031C20.3223 2.54102 18.7695 2.14062 17.0166 2.05273C15.21 1.9502 9.79492 1.9502 7.98828 2.05273C6.24023 2.13574 4.6875 2.53613 3.40332 3.81543C2.11914 5.09473 1.72363 6.64746 1.63574 8.40039C1.5332 10.207 1.5332 15.6221 1.63574 17.4287C1.71875 19.1816 2.11914 20.7344 3.40332 22.0137C4.6875 23.293 6.23535 23.6934 7.98828 23.7812C9.79492 23.8838 15.21 23.8838 17.0166 23.7812C18.7695 23.6982 20.3223 23.2979 21.6016 22.0137C22.8809 20.7344 23.2812 19.1816 23.3691 17.4287C23.4717 15.6221 23.4717 10.2119 23.3691 8.40527ZM21.0352 19.3672C20.6543 20.3242 19.917 21.0615 18.9551 21.4473C17.5146 22.0186 14.0967 21.8867 12.5049 21.8867C10.9131 21.8867 7.49023 22.0137 6.05469 21.4473C5.09766 21.0664 4.36035 20.3291 3.97461 19.3672C3.40332 17.9268 3.53516 14.5088 3.53516 12.917C3.53516 11.3252 3.4082 7.90234 3.97461 6.4668C4.35547 5.50977 5.09277 4.77246 6.05469 4.38672C7.49512 3.81543 10.9131 3.94727 12.5049 3.94727C14.0967 3.94727 17.5195 3.82031 18.9551 4.38672C19.9121 4.76758 20.6494 5.50488 21.0352 6.4668C21.6064 7.90723 21.4746 11.3252 21.4746 12.917C21.4746 14.5088 21.6064 17.9316 21.0352 19.3672Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M18.3174 14.4844L19.0117 9.95996H14.6704V7.02393C14.6704 5.78613 15.2769 4.57959 17.2212 4.57959H19.1948V0.727539C19.1948 0.727539 17.4038 0.421875 15.6914 0.421875C12.1162 0.421875 9.7793 2.58887 9.7793 6.51172V9.95996H5.80518V14.4844H9.7793V25.4219H14.6704V14.4844H18.3174Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="25" height="25" fill="white" transform="translate(0 0.421875)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main data-scrollbar>
+
+        <div id="page-content">
+            
+            <!-- header -->
+            <header class="header">
+                <div class="container">
+                    <div class="header__menu">
+                        <div class="header__item flex">
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img src="img/logo.svg" alt="Bobur Alikhanov" />
+                                </a>
+                            </div>
+                            <div class="header__btn">
+                                <a href="about.html" class="btn"> О нас</a>
+                                <a href="blog.html" class="btn">Блог</a>
+                            </div>
+                        </div>
+                        <div class="header__item flex">
+                            <div class="header__btn">
+                                <a href="courses.html" class="btn">Курсы</a>
+                            </div>
+                        </div>
+                        <div class="header__item flex">
+                            <div class="header__btn">
+                                <a href="companies.html" class="btn">Компаниям</a>
+                                <a href="contact.html" class="btn">Контакты</a>
+                                <a href="login.html" class="btn--item">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="user">
+                                            <path id="Path 4"
+                                                d="M4.58337 16.25C4.58337 16.25 7.50004 15 8.33337 14.1667C9.16671 13.3333 6.66671 13.3333 6.66671 9.16667C6.66671 5 10 5 10 5C10 5 13.3334 5 13.3334 9.16667C13.3334 13.3333 10.8334 13.3333 11.6667 14.1667C12.5 15 15.4167 16.25 15.4167 16.25"
+                                                stroke="#722CF6" stroke-linecap="round" />
+                                            <path id="Oval" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.99996 18.3332C14.6023 18.3332 18.3333 14.6022 18.3333 9.99984C18.3333 5.39746 14.6023 1.6665 9.99996 1.6665C5.39759 1.6665 1.66663 5.39746 1.66663 9.99984C1.66663 14.6022 5.39759 18.3332 9.99996 18.3332Z"
+                                                stroke="#722CF6" />
+                                        </g>
+                                    </svg>
+                                    Войти
+                                </a>
+                                <button class="burger">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- banner -->
+            <section class="banner">
+                <div class="prealoader-round"></div>
+                <div class="container">
+                    <div class="banner__slider">
+                        <div class="slick-slider">
+                            <div class="banner__slider--item">
+                                <div class="banner__content">
+                                    <div class="banner__title">Сделайте шаг<br /> к развитию<br /> команды
+                                        <span class="banner__item">с 20 июня</span>
+                                    </div>
+                                    <p class="banner__subtitle">Курсы для корпоративного<br /> обучения: предложим
+                                        готовое<br />
+                                        решение или разработаем<br /> программу под ваш запрос</p>
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                                <div class="banner__img">
+                                    <img src="img/banner.png" alt="">
+                                </div>
+                                <div class="block__title">
+                                    <div class="title--white">для компаний</div>
+                                </div>
+                            </div>
+                            <div class="banner__slider--item">
+                                <div class="banner__content">
+                                    <div>
+                                        <div class="banner__title">Сделайте шаг<br /> к развитию<br /> команды
+                                            <span class="banner__item">с 20 июня</span>
+                                        </div>
+                                    </div>
+                                    <p class="banner__subtitle">Курсы для корпоративного<br /> обучения: предложим
+                                        готовое<br />
+                                        решение или разработаем<br /> программу под ваш запрос</p>
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                                <div class="banner__img">
+                                    <img src="img/banner.png" alt="">
+                                </div>
+                                <div class="block__title">
+                                    <div class="title--white">для компаний</div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="slider__btn">
+                            <button class="prev__btn">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L2 7L8 13" stroke="#722CF6" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <button class="next__btn">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L2 7L8 13" stroke="#722CF6" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- facts -->
+            <section class="facts">
+                <div class="container">
+                    <div class="facts__content white flex">
+                        <div class="block__title">
+                            <div class="title">Факты</div>
+                            <div class="subtitle">Классический текст<br /> Lorem Ipsum XVI века,<br /> приведён ниже.</div>
+                        </div>
+                        <div class="facts__amount flex">
+                            <div class="amount">
+                                <div class="amount__number">05</div>
+                                <div class="amount__text">курсов</div>
+                            </div>
+                            <div class="amount">
+                                <div class="amount__number">64</div>
+                                <div class="amount__text">студентов</div>
+                            </div>
+                            <div class="amount">
+                                <div class="amount__number">274</div>
+                                <div class="amount__text">преподавателей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- video -->
+            <section class="video">
+                <div class="container">
+                    <div class="video__inner">
+                        <div class="video__content">
+                            <div class="video__item--one">00:32</div>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                <img src="img/play.svg" alt="" class="video__play">
+                            </a>
+                            <div class="video__item--two">Экскурсия по академии</div>
+                            <video autoplay poster="img/poster.jpg" muted="muted" playsinline="" loop="loop" class="video-block__preview">
+                                <!-- <source src="#" type="block/webm"> -->
+                                <source src="video/about.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- start-course -->
+            <section class="start-course">
+                <div class="container">
+                    <div class="start-course__content white">
+                        <div class="block__title">
+                            <div class="title">Ближайшие старты курсов</div>
+                        </div>
+                        <div class="ticket">
+                            <a href="course-inside.html">
+                                <div class="ticket__content">
+                                    <div class="stub">
+                                        <div class="stub__img">
+                                            <img src="img/ticket-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="check">
+                                        <div class="check__name">
+                                            <div class="name__text">Профессия</div>
+                                            <div class="name__title">Data Scientist</div>
+                                        </div>
+                                        <div class="check__date flex">
+                                            <div class="date__text"><span class="date__text--item">Старт:</span>06 июня
+                                            </div>
+                                            <div class="date__item">09 месяца</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="course-inside.html">
+                                <div class="ticket__content">
+                                    <div class="stub col-blue">
+                                        <div class="stub__img">
+                                            <img src="img/ticket-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="check col-blue-gr">
+                                        <div class="check__name">
+                                            <div class="name__text">Профессия</div>
+                                            <div class="name__title">Fullstack-разработчик на Python</div>
+                                        </div>
+                                        <div class="check__date flex">
+                                            <div class="date__text"><span class="date__text--item">Старт:</span>12 июня
+                                            </div>
+                                            <div class="date__item">09 месяца</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="course-inside.html">
+                                <div class="ticket__content">
+                                    <div class="stub col-red">
+                                        <div class="stub__img">
+                                            <img src="img/ticket-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="check col-red-gr">
+                                        <div class="check__name">
+                                            <div class="name__text">Профессия</div>
+                                            <div class="name__title">Графический<br />
+                                                дизайнер</div>
+                                        </div>
+                                        <div class="check__date flex">
+                                            <div class="date__text"><span class="date__text--item">Старт:</span>18 июня
+                                            </div>
+                                            <div class="date__item">09 месяца</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="course-inside.html">
+                                <div class="ticket__content">
+                                    <div class="stub">
+                                        <div class="stub__img">
+                                            <img src="img/ticket-4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="check">
+                                        <div class="check__name">
+                                            <div class="name__text">Профессия</div>
+                                            <div class="name__title">Machine Learning Engineer</div>
+                                        </div>
+                                        <div class="check__date flex">
+                                            <div class="date__text"><span class="date__text--item">Старт:</span>20 июня
+                                            </div>
+                                            <div class="date__item">09 месяца</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- form -->
+            <section class="form">
+                <div class="container">
+                    <div class="form__content white flex">
+                        <div class="block__title flex">
+                            <div class="subtitle">Цепляющий текст<br />
+                                после просмотра курса</div>
+                            <p class="text">Если у вас есть вопросы о формате или вы не<br /> знаете что выбрать,
+                                оставьте свой номер: мы<br /> позвоним, чтобы ответить на все ваши<br /> вопросы.</p>
+                        </div>
+                        <div class="form__block">
+                            <form id="1" method="POST" autocomplete="off">
+                                <div class="form__block-1">
+                                    <div class="form__group">
+                                        <input class="input" type="text" name="name" placeholder="Имя" required />
+                                    </div>
+                                    <div class="form__group">
+                                        <input class="input" type="tel" name="phone" placeholder="Телефон" required />
+                                    </div>
+                                </div>
+                                <div class="form__block-2">
+                                    <div class="form__group">
+                                        <label for="" class="label">Отправляя заявку, <a href="#"><u>я соглашаюсь на
+                                                    обработку</u></a><br /> персональных данных</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <button class="form-btn" type="submit">Отправить заявку</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- liders -->
+            <section class="liders">
+                <div class="container">
+                    <div class="liders__content white">
+                        <div class="block__title">
+                            <div class="title">Преподаватели</div>
+                        </div>
+                        <div class="liders__img flex">
+                            <div class="liders__card">
+                                <img src="img/liders-1.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-2.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-3.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-4.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                        </div>
+                        <div class="liders__img flex">
+                            <div class="liders__card">
+                                <img src="img/liders-5.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-6.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-7.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                            <div class="liders__card">
+                                <img src="img/liders-8.png" alt="">
+                                <div class="liders__name">Михаил Бородин</div>
+                                <p class="liders__position">Руководитель разработки веб-проектов<br /> в X5 Retail Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- reviews -->
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__content white">
+                        <div class="block__title">
+                            <div class="title">Отзывы</div>
+                        </div>
+                        <ul class="slider__btn">
+                            <button class="prev__arrow">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L2 7L8 13" stroke="#722CF6" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <button class="next__arrow">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L2 7L8 13" stroke="#722CF6" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </ul>
+                        <div class="reviews__video flex">
+                            <div class="video--item">
+                                <img src="img/reviews-1.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Алиса</p>
+                                </div>
+                            </div>
+                            <div class="video--item">
+                                <img src="img/reviews-2.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Даша</p>
+                                </div>
+                            </div>
+                            <div class="video--item">
+                                <img src="img/reviews-3.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Даша</p>
+                                </div>
+                            </div>
+                            <div class="video--item">
+                                <img src="img/reviews-4.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Руслан</p>
+                                </div>
+                            </div>
+                            <div class="video--item">
+                                <img src="img/reviews-1.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Алиса</p>
+                                </div>
+                            </div>
+                            <div class="video--item">
+                                <img src="img/reviews-2.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Даша</p>
+                                </div>
+                            </div>
+                            <div class="video--item">
+                                <img src="img/reviews-3.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Даша</p>
+                                </div>
+                            </div>
+                            <div class="video--item">
+                                <img src="img/reviews-4.jpg" alt="">
+                                <div class="video__text">
+                                    <p class="text__when">00:43</p>
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=9No-FiEInLA&t=2s" class="video__play">
+                                        <img src="img/play.svg" alt="" class="video__play">
+                                    </a>
+                                    <p class="text__name">Руслан</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- partners -->
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__content white flex">
+                        <div class="block__title">
+                            <div class="title">Наши партнеры</div>
+                            <div class="subtitle">Классический<br />текст Lorem<br />Ipsum XVI века</div>
+                            <p class="text">Собираем лучшие вакансии в<br /> отрасли, готовим к интервью и<br /> рекомендуем
+                                вас компаниям-<br />партнёрам.</p>
+                        </div>
+                        <div class="partners__img">
+                            <img src="img/partners.png" alt="">
+                            <img src="img/partners-1.png" alt="" class="img__inactive">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section__form -->
+            <section class="section__form">
+                <div class="container">
+                    <div class="form__content white">
+                        <div class="block__title flex">
+                            <div class="subtitle">Цепляющий текст<br />
+                                после просмотра курса</div>
+                            <p class="text">Если у вас есть вопросы о формате или вы не знаете что выбрать,оставьте<br />
+                                свой
+                                номер: мы позвоним, чтобы ответить на все вашивопросы.</p>
+                        </div>
+                        <div class="form__block">
+                            <form id="2" method="POST" autocomplete="off" id="2">
+                                <div class="form__block-1">
+                                    <div class="form__group">
+                                        <input class="input" type="text" name="name" placeholder="Имя" required />
+                                    </div>
+                                    <div class="form__group">
+                                        <input class="input" type="tel" name="phone" placeholder="Телефон" required />
+                                    </div>
+                                    <div class="form__group">
+                                        <button class="form-btn" type="submit">Отправить заявку</button>
+                                    </div>
+                                </div>
+                                <div class="form__block-2">
+                                    <div class="form__group">
+                                        <label for="" class="label">Отправляя заявку, <a href="#"><u>я соглашаюсь на обработку</u></a> персональных данных</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__content white">
+                        <div class="footer__item flex">
+                            <div class="footer__contacts flex">
+                                <div class="location">
+                                    <div class="location__item">
+                                        <div class="flex">
+                                            <div class="contact__title">Manzil</div>
+                                        </div>
+                                        <p class="contact__text">Toshkent sh,<br /> Universitetskaya, 4 ko'chasi</p>
+                                    </div>
+                                    <div class="location__item">
+                                        <div class="contact__title">Ish vaqti</div>
+                                        <p class="contact__text">Dushanba-Shanba 09:00-18:00</p>
+                                        <p class="contact__text">Yakshanba Dam olish kuni</p>
+                                    </div>
+                                </div>
+                                <div class="contacts">
+                                    <div class="contacts__item">
+                                        <div class="contact__title">Telefon raqam</div>
+                                        <a href="tel:+998 71 200-06-10" class="contact__text">+998 71 200-06-10</a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contact__title">Email</div>
+                                        <a href="mailto:ba@napa.uz" class="contact__text">ba@napa.uz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__menu flex">
+                                <div class="footer__menu--item">
+                                    <div class="contact__title">Меню</div>
+                                    <ul>
+                                        <li><a href="about.html" class="menu__link">О нас</a></li>
+                                        <li><a href="blog.html" class="menu__link">Блог</a></li>
+                                        <li><a href="courses.html" class="menu__link">Курсы</a></li>
+                                        <li><a href="companies.html" class="menu__link">Компаниям</a></li>
+                                        <li><a href="contact.html" class="menu__link">Контакты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__menu--item">
+                                    <div class="contact__title">Все направления</div>
+                                    <ul>
+                                        <li><a href="course-inside.html" class="menu__link">Дизайн</a></li>
+                                        <li><a href="course-inside.html" class="menu__link">Управление</a></li>
+                                        <li><a href="course-inside.html" class="menu__link">Программирование</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__social">
+                                <div class="social__item flex">
+                                    <a href="#" class="social__link">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.0488 5.77738L24.0879 24.4571C23.7891 25.7754 23.0098 26.1036 21.9024 25.4825L15.8672 21.0352L12.9551 23.836C12.6328 24.1582 12.3633 24.4278 11.7422 24.4278L12.1758 18.2813L23.3613 8.17386C23.8477 7.74027 23.2559 7.50003 22.6055 7.93363L8.77736 16.6407L2.82424 14.7774C1.52932 14.3731 1.50588 13.4825 3.09377 12.8614L26.3789 3.89066C27.4571 3.48636 28.4004 4.13089 28.0488 5.77738Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.8566 7.19627C23.584 6.16979 22.7808 5.36137 21.761 5.08703C19.9124 4.5885 12.5001 4.5885 12.5001 4.5885C12.5001 4.5885 5.08773 4.5885 3.23917 5.08703C2.21933 5.36142 1.41612 6.16979 1.14351 7.19627C0.648193 9.05682 0.648193 12.9387 0.648193 12.9387C0.648193 12.9387 0.648193 16.8205 1.14351 18.6811C1.41612 19.7076 2.21933 20.4823 3.23917 20.7566C5.08773 21.2552 12.5001 21.2552 12.5001 21.2552C12.5001 21.2552 19.9124 21.2552 21.761 20.7566C22.7808 20.4823 23.584 19.7076 23.8566 18.6811C24.3519 16.8205 24.3519 12.9387 24.3519 12.9387C24.3519 12.9387 24.3519 9.05682 23.8566 7.19627ZM10.0758 16.4631V9.41424L16.2711 12.9388L10.0758 16.4631Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5049 7.30664C9.39941 7.30664 6.89453 9.81152 6.89453 12.917C6.89453 16.0225 9.39941 18.5273 12.5049 18.5273C15.6104 18.5273 18.1152 16.0225 18.1152 12.917C18.1152 9.81152 15.6104 7.30664 12.5049 7.30664ZM12.5049 16.5645C10.498 16.5645 8.85742 14.9287 8.85742 12.917C8.85742 10.9053 10.4932 9.26953 12.5049 9.26953C14.5166 9.26953 16.1523 10.9053 16.1523 12.917C16.1523 14.9287 14.5117 16.5645 12.5049 16.5645ZM19.6533 7.07715C19.6533 7.80469 19.0674 8.38574 18.3447 8.38574C17.6172 8.38574 17.0361 7.7998 17.0361 7.07715C17.0361 6.35449 17.6221 5.76855 18.3447 5.76855C19.0674 5.76855 19.6533 6.35449 19.6533 7.07715ZM23.3691 8.40527C23.2861 6.65234 22.8857 5.09961 21.6016 3.82031C20.3223 2.54102 18.7695 2.14062 17.0166 2.05273C15.21 1.9502 9.79492 1.9502 7.98828 2.05273C6.24023 2.13574 4.6875 2.53613 3.40332 3.81543C2.11914 5.09473 1.72363 6.64746 1.63574 8.40039C1.5332 10.207 1.5332 15.6221 1.63574 17.4287C1.71875 19.1816 2.11914 20.7344 3.40332 22.0137C4.6875 23.293 6.23535 23.6934 7.98828 23.7812C9.79492 23.8838 15.21 23.8838 17.0166 23.7812C18.7695 23.6982 20.3223 23.2979 21.6016 22.0137C22.8809 20.7344 23.2812 19.1816 23.3691 17.4287C23.4717 15.6221 23.4717 10.2119 23.3691 8.40527ZM21.0352 19.3672C20.6543 20.3242 19.917 21.0615 18.9551 21.4473C17.5146 22.0186 14.0967 21.8867 12.5049 21.8867C10.9131 21.8867 7.49023 22.0137 6.05469 21.4473C5.09766 21.0664 4.36035 20.3291 3.97461 19.3672C3.40332 17.9268 3.53516 14.5088 3.53516 12.917C3.53516 11.3252 3.4082 7.90234 3.97461 6.4668C4.35547 5.50977 5.09277 4.77246 6.05469 4.38672C7.49512 3.81543 10.9131 3.94727 12.5049 3.94727C14.0967 3.94727 17.5195 3.82031 18.9551 4.38672C19.9121 4.76758 20.6494 5.50488 21.0352 6.4668C21.6064 7.90723 21.4746 11.3252 21.4746 12.917C21.4746 14.5088 21.6064 17.9316 21.0352 19.3672Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg width="25" height="26" viewBox="0 0 25 26" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M18.3174 14.4844L19.0117 9.95996H14.6704V7.02393C14.6704 5.78613 15.2769 4.57959 17.2212 4.57959H19.1948V0.727539C19.1948 0.727539 17.4038 0.421875 15.6914 0.421875C12.1162 0.421875 9.7793 2.58887 9.7793 6.51172V9.95996H5.80518V14.4844H9.7793V25.4219H14.6704V14.4844H18.3174Z"
+                                                    fill="black" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="25" height="25" fill="white"
+                                                        transform="translate(0 0.421875)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__logo">
+                            <div class="logo__item flex">
+                                <a href="#">
+                                    <img src="img/logo.svg" alt="Bobur Alikhanov" />
+                                </a>
+                                <span class="footer__logo--item">© 2021, Bobir Alikhanov Academy</span>
+                                <a href="#" class="logo__yeko">
+                                    <img src="img/logo-yeko.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <div class="scrollbar-track scrollbar-track-x">
+            <div class="scrollbar-thumb scrollbar-thumb-x"></div>
+        </div>
+        <div class="scrollbar-track scrollbar-track-y">
+            <div class="scrollbar-thumb scrollbar-thumb-y"></div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+        // Preloader
+        let images = document.images,
+            total_count = images.length,
+            loaded_count = 0,
+            preloader = document.getElementById('preloader'),
+            perc_display = document.getElementById('load_perc'),
+            height_display = document.getElementById('height_load');
+
+        for (let i = 0; i < total_count; i++) {
+            image_clone = new Image();
+            image_clone.onload = image_loaded;
+            image_clone.onerror = image_loaded;
+            image_clone.src = images[i].src;
+        }
+
+        function image_loaded() {
+            loaded_count++;
+            perc_display.innerHTML = (( (99 / total_count) * loaded_count ) << 0);
+            height_display.style.height = (( (100 / total_count) * loaded_count ) << 0) + '%';
+
+            if (loaded_count >= total_count) {
+                setTimeout(function() {
+                    if(!preloader.classList.contains('done') ) {
+                        setTimeout(function () {
+                            preloader.classList.add('done')
+                        }, 2000)
+                        gsap.to(preloader, .5, { yPercent: -100, ease: Power1.out })
+                    }
+                }, 1000)
+            }
+        }
+    </script>
+</body>
+</html>

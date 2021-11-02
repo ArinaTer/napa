@@ -1,0 +1,310 @@
+// blog
+.blog
+    margin: 30px 0 60px
+    +r(1280)
+        margin: 30px 0 40px
+    +r(768)
+        margin: 20px 0
+
+    .blog__content
+        padding: 60px
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+    .blog__item
+        justify-content: space-between
+        grid-gap: 150px
+        +r(1600)
+            grid-gap: 90px
+        +r(1280)
+            grid-gap: 60px
+        +r(1024)
+            grid-gap: 1px
+            flex-direction: column
+
+    .blog__headline
+        position: relative
+        +r(1024)
+            display: flex
+            align-items: baseline
+            grid-gap: 60px
+        +r(800)
+            grid-gap: 20px
+            flex-direction: column
+
+    .headline__title
+        padding-bottom: 60px
+        +r(1600)
+            font-size: 60px
+        +r(1280)
+            padding-bottom: 20px
+            font-size: 50px
+        +r(768)
+            padding-bottom: 0
+            font-size: 40px
+
+    .instruments
+        position: absolute
+        right: 15px
+        display: none
+        +r(768)
+            display: block
+
+    .section__links
+        +r(1024)
+            display: flex
+            flex-wrap: wrap
+        .link
+            margin-bottom: 10px
+            +r(1024)
+                margin-right: 10px
+            +r(768)
+                display: none
+
+    .card
+        margin: 0 0 30px
+        +r(1600)
+            flex-basis: 100%
+            max-width: 100%
+        +r(1280)
+            margin: 0 0 20px
+        +r(1024)
+            margin: 0
+        +r(768)
+            max-width: 100%
+        img
+            +r(1024)
+                height: 220px
+
+    .card__link--item
+        +r(1024)
+            padding-top: 40px
+        +r(768)
+            padding-top: 30px
+
+    .card__text--item
+        +r(1024)
+            display: none
+
+// course
+.course
+    margin: 30px 0 60px
+    +r(1280)
+        margin: 30px 0 40px
+    +r(768)
+        margin: 20px 0
+
+    .course__content
+        padding: 60px
+        position: relative
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+    .card
+        img
+            +r(1600)
+                height: 500px
+            +r(1024)
+                height: 400px
+            +r(768)
+                max-width: 100%
+                object-fit: cover
+                border-radius: 15px
+                height: 220px
+
+    .card__content
+        +r(1280)
+            position: absolute
+            top: 30px
+            left: 30px
+            right: 30px
+        +r(768)
+            top: 15px
+            left: 15px
+            right: 15px
+        .section__links
+            +r(768)
+                order: 2
+        .card__text--item
+            +r(1024)
+                display: none
+                order: 1
+
+    .course__item
+        justify-content: space-between
+        align-items: baseline
+        +r(1600)
+            grid-gap: 60px
+
+        .social__item
+            display: flex
+            +r(1024)
+                display: none
+
+    .course__text
+        font-size: 20px
+        line-height: 150%
+        +r(1280)
+            font-size: 16px
+
+    .list__title
+        color: $purple
+        font-size: 30px
+        line-height: 150%
+        padding: 30px 0
+        +r(1280)
+            font-size: 20px
+
+    .list__text
+        font-size: 20px
+        line-height: 150%
+        padding-bottom: 20px
+        +r(1280)
+            font-size: 16px
+        &:last-child
+            padding-bottom: 0
+
+    .social__item
+        display: none
+        +r(768)
+            display: flex
+            padding-top: 25px
+
+        .social-text--item
+            padding: 0 30px
+            font-size: 16px
+            line-height: 100%
+            color: $purple
+            +bold
+            +r(1280)
+                padding: 0 30px 0
+            +r(768)
+                padding: 0 30px 0 0
+
+// similar
+.similar
+    .similar__content
+        padding: 60px
+        +r(1280)
+            padding: 40px
+        +r(768)
+            padding: 15px
+
+    .similar__item
+        justify-content: space-between
+        +r(768)
+            flex-direction: column
+            grid-gap: 20px
+
+    .card
+        +r(768)
+            margin: 0
+        img
+            +r(1024)
+                height: 220px
+
+    .card__link
+        grid-gap: 30px
+        display: flex
+        +r(1600)
+            flex-basis: 80%
+            max-width: 80%
+        +r(1024)
+            flex-basis: 100%
+            max-width: 100%
+            justify-content: end
+        +r(768)
+            justify-content: center
+            flex-direction: column
+            grid-gap: 10px
+
+// blog-form
+.blog-form
+    margin: 60px 0
+    +r(1280)
+        margin: 40px 0
+    +r(1024)
+        margin: 30px 0
+    +r(768)
+        margin: 20px 0
+
+    .block__title
+        br
+            +r(1024)
+                display: none
+
+    .form__content
+        padding: 60px
+        justify-content: space-between
+        grid-gap: 50px
+        +r(1280)
+            padding: 40px
+        +r(875)
+            grid-gap: 20px
+            flex-direction: column
+        +r(768)
+            grid-gap: 0
+            padding: 15px
+
+    .form__block
+        flex-basis: 100%
+        max-width: 100%
+
+    .form__block-1
+        display: flex
+        align-items: flex-end
+        grid-gap: 30px
+        flex-basis: 100%
+        max-width: 100%
+        +r(1024)
+            grid-gap: 15px
+        +r(600)
+            flex-direction: column
+            align-items: inherit
+        +r(768)
+            padding-top: 20px
+
+    .form__group
+        flex-basis: 100%
+        max-width: 100%
+
+    .input
+        width: 100%
+
+    .form-btn
+        width: 100%
+
+.blog__content__showmore
+    display: flex
+    align-items: center
+    justify-content: center
+    svg
+        margin-right: 10px
+        display: block
+        stroke: $w
+        transition: .5s ease
+    .btn
+        display: flex
+        align-items: center
+        padding: 20px 55px
+        border: 1px solid $w
+        border-radius: 15px
+        font-size: 18px
+        line-height: 100%
+        color: $w
+        transition: .2s ease
+        background: $purple
+        +r(1280)
+            font-size: 14px
+        &:hover
+            background-color: $purple
+            color: $w
+            border-color: $purple
+            transition: .2s ease
+            svg
+                transition: .5s ease
+                transform: rotate(360deg)

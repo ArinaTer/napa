@@ -1,0 +1,11 @@
+<svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="dashboard">
+<rect id="Rectangle" x="8.3335" y="9.21423" width="83.3333" height="83.3333" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+<path id="Path 2" d="M45.8335 30.0475H70.8335" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="Path 2_2" d="M45.8335 50.8809H70.8335" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="Path 2_3" d="M45.8335 71.7141H70.8335" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M29.1667 34.2142C31.4679 34.2142 33.3333 32.3487 33.3333 30.0475C33.3333 27.7463 31.4679 25.8809 29.1667 25.8809C26.8655 25.8809 25 27.7463 25 30.0475C25 32.3487 26.8655 34.2142 29.1667 34.2142Z" fill="white"/>
+<path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd" d="M29.1667 55.0476C31.4679 55.0476 33.3333 53.1821 33.3333 50.8809C33.3333 48.5797 31.4679 46.7142 29.1667 46.7142C26.8655 46.7142 25 48.5797 25 50.8809C25 53.1821 26.8655 55.0476 29.1667 55.0476Z" fill="white"/>
+<path id="Oval_3" fill-rule="evenodd" clip-rule="evenodd" d="M29.1667 75.8808C31.4679 75.8808 33.3333 74.0153 33.3333 71.7141C33.3333 69.413 31.4679 67.5475 29.1667 67.5475C26.8655 67.5475 25 69.413 25 71.7141C25 74.0153 26.8655 75.8808 29.1667 75.8808Z" fill="white"/>
+</g>
+</svg>
